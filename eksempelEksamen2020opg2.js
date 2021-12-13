@@ -9,6 +9,8 @@
 //Det er en indviklet algoritme, og der bliver brugt noget syntaks, som i formentlig ikke har set før. For at forstå hvad der sker i koden, så er det også vigtigt at i
 //forstår syntaksen, og hvad de enkelte kode elementer gør. Derfor, få styr på det basale, så er det nemmere at forstå funktionen.
 
+//Obs. jeg har ikke nået at lave koden, der til sidst skulle fjerne duplicater - men det skal heller ikke være alt for nemt ;)
+
 function formatArray (array) {
     for (let i = 0; i < array.length; i++) {
         let day = array[i].ssn[0] + array[i].ssn[1];
