@@ -1,4 +1,14 @@
-//
+//Til at løse denne opgave bliver der gjort brug af en QuickSort algoritme - her er en gennemgang: https://www.youtube.com/watch?v=P6XGSKO2RzI
+//formatArray tilføjer 2 nye parametre til alle objekter, som er deres fødselsdag (fjerner de sidste 4 numre på CPR nummeret, og vender CPR nummeret om,
+//så det står på formen YYMMDD, hvilket gør det muligt at sammenligne dem direkt).
+//Derudover får vi fat på efternavnet, da det er den anden parameter vi skal sortere på.
+
+//formatArrayBack fjerner de to nye attributter (age, lastname) som vi tilføjede hvert objekt i formatArray.
+
+//sortArray bruger quickSort algoritmen til at sortere arrayet. Se videoen for en gennemgang. Hvis det ikke giver mening første gang i ser den, så se den et par gange.
+//Det er en indviklet algoritme, og der bliver brugt noget syntaks, som i formentlig ikke har set før. For at forstå hvad der sker i koden, så er det også vigtigt at i
+//forstår syntaksen, og hvad de enkelte kode elementer gør. Derfor, få styr på det basale, så er det nemmere at forstå funktionen.
+
 function formatArray (array) {
     for (let i = 0; i < array.length; i++) {
         let day = array[i].ssn[0] + array[i].ssn[1];
